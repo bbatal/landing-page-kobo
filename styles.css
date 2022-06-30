@@ -273,6 +273,10 @@ footer p {
         font-size: 22px;
     }
 
+    .faq-container li {
+        padding: 1.5em 1.1em;
+    }
+
     .faq-container .answer {
         font-size: 18px;
     }
