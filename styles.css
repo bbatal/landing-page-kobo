@@ -74,7 +74,7 @@ header {
 
 h1 {
     /* this pixel size works best for screen sizes below 400px */
-    font-size: 18.4074px;
+    font-size: 16.4074px;
     line-height: 23px;
     letter-spacing: 0.01em;
     width: 55%;
@@ -133,7 +133,7 @@ h1 {
     font-size: 18px;
     line-height: 139.34%;
     letter-spacing: 0.0857142px;
-    margin: 0 0 3em 0;
+    margin: 0 0 1em 0;
     text-align: center;
 }
 
@@ -296,8 +296,9 @@ footer p {
     .offers-container {
         flex-direction: row;
         align-items: baseline;
+        max-width: 960px;
         gap: 3em;
-        margin: 2.5em 0 1em 0;
+        margin: 2.5em auto 1em auto;
     }
     /* SECTION.OFFERS STYLES END */
  }
@@ -305,7 +306,59 @@ footer p {
  /* big landscape tablets, laptops, and desktops */
  @media (min-width:1025px) {
     .wrapper {
-            max-width: 1099px;
+            max-width: 1200px;
+            width: 84.5%;
     }
+
+    /* HEADER STYLES BEGIN */
+    h1 {
+        font-size: 37.323px;
+        line-height: 52px;
+        padding-left: 3em;
+    }
+
+    .logo {
+        left: 4em;
+        top: 2em;
+    }
+
+    .logo-image {
+        width: 140px;
+    }
+
+    header {
+        background-size: 100% 465px;
+        min-height: 465px;
+    }
+    /* HEADER STYLES END */
+
+ }
+
+ /* desktop+ */
+ @media (min-width:1282px) {
+    .wrapper {
+        max-width: 1200px;
+        width: 84.5%;
+    }
+    
+    /* HEADER STYLES BEGIN */
+    h1 {
+        font-size: 48.3226px;
+    }
+
+    .logo {
+        left: 4em;
+        top: 2em;
+    }
+
+    .logo-image {
+        width: 140px;
+    }
+
+    header {
+        background-size: 100% 465px;
+        min-height: 465px;
+    }
+    /* HEADER STYLES END */
  }
 
