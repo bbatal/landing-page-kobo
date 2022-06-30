@@ -159,6 +159,10 @@ h1 {
     gap: 1em;
 }
 
+.faq-container li:hover {
+    background-color: #F9F9F9;
+}
+
 .faq-container button {
     background-color: transparent;
     border: none;
