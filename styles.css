@@ -49,7 +49,7 @@ ul {
 /* HEADER STYLES BEGIN */
 header {
     background: url(./assets/hero-image-final.jpg);
-    background-size: contain;
+    background-size: 100% 206px;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -70,9 +70,137 @@ header {
 }
 
 h1 {
-    font-size: 21.4074px;
+    /* this pixel size works best for screen sizes below 400px */
+    font-size: 18.4074px;
     line-height: 23px;
     letter-spacing: 0.01em;
     width: 55%;
-    padding-left: 3em;
+    padding-left: 1.9em;
 }
+/* HEADER SECTION STYLES END */
+/* MAIN STYLES BEGIN */
+/* SECTION.OFFERS STYLES BEGIN */
+.offers {
+    text-align: center;
+}
+.offers h2 {
+    font-size: 18px;
+    margin: 3em 0 1em 0;
+}
+
+.offers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.offers-container li {
+    max-width: 303px;
+    margin-bottom: 2em;
+}
+
+.offers-container .offer-number {
+    font-size: 80px;
+    line-height: 93px;
+    color: #595959;
+}
+
+.offers-container .offer-text {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.0857142px;
+}
+
+.offers .foot-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 351px;
+    margin: 0 auto 3em auto;
+    line-height: 22px;
+    letter-spacing: 0.0857142px;
+}
+/* SECTION.OFFER STYLES END */
+
+/* SECTION.FAQ STYLES BEGIN */
+.faq h3{
+    font-size: 18px;
+    line-height: 139.34%;
+    letter-spacing: 0.0857142px;
+    margin: 0 0 3em 0;
+    text-align: center;
+}
+
+.faq-container li {
+    border-top: 1.90958px solid #595959;
+    padding: 1.5em 0.7em;
+}
+
+.faq-container h4 {
+    font-size: 20px;
+    line-height: 139.34%;
+    letter-spacing: 0.0818393px;
+}
+
+.faq-container li:nth-child(3) {
+    border-bottom: 1.90958px solid #595959;
+}
+
+.faq-container .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.faq-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.minus-symbol,
+.plus-symbol {
+    display: inline-block;
+    background-image: url(./assets/minus-symbol.svg);
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+}
+
+.plus-symbol {
+    background-image: url(./assets/plus-symbol.svg);
+}
+
+.faq-container .answer {
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    line-height: 139.34%;
+    letter-spacing: 0.0818393px;
+    margin-top: 1em;
+    width: 85%;
+}
+
+/* SECTION.FAQ STYLES END */
+/* MAIN STYLES END */
+/* FOOTER STYLES BEGIN */
+footer p {
+    text-align: start;
+    padding: 2em 0 0 0.3em;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.0857142px;
+}
+/* FOOTER STYLES END */
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 450px) {
+    h1 {
+        font-size: 21.4074px;
+        padding-left: 3em;
+    }
+}
+
