@@ -66,7 +66,10 @@ header {
     position: absolute;
     left: 2em;
     top: 1em;
+}
 
+.logo-image {
+    width: 62.02px;
 }
 
 h1 {
@@ -85,6 +88,8 @@ h1 {
 }
 .offers h2 {
     font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.0857142px;
     margin: 3em 0 1em 0;
 }
 
@@ -116,6 +121,7 @@ h1 {
 .offers .foot-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     max-width: 351px;
+    font-size: 16px;
     margin: 0 auto 3em auto;
     line-height: 22px;
     letter-spacing: 0.0857142px;
@@ -197,10 +203,109 @@ footer p {
 
 
 /* MEDIA QUERIES */
+/* smartphones, Android phones, landscape iPhone */
 @media (min-width: 450px) {
     h1 {
         font-size: 21.4074px;
         padding-left: 3em;
     }
 }
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:600px) {
+    .wrapper  {
+        max-width: 600px;
+    }
+
+    /* HEADER STYLES */
+    .logo-image {
+        width: 86.82px;
+    }
+
+    h1 {
+        font-size: 26.407px;
+    }
+
+    header {
+        background-size: 100% 321px;
+        min-height: 321px;
+    }
+        
+    /* HEADER STYLES END */
+
+    /* MAIN BEGINS */
+    /* SECTION.OFFERS BEGINS */
+    .offers h2 {
+        font-size: 26px;
+        line-height: 36px;
+        margin: 2em 0 1em 0;
+    }
+
+    .offers-container {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .offers-container .offer-number {
+        font-size: 90px;
+        line-height: 105px;
+    }
+
+    .offers-container .offer-text {
+        font-size: 22px;
+        line-height: 31px;
+        letter-spacing: 0.0857142px;
+    }
+
+    .offers .foot-text {
+        max-width: 526px;
+        font-size: 16px;
+    }
+    /* SECTION.OFFERS ENDS */
+
+    /* SECTION.FAQ STYLES BEGIN */
+    .faq h3{
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .faq-container h4 {
+        font-size: 22px;
+    }
+
+    .faq-container .answer {
+        font-size: 18px;
+    }
+    /* SECTION.FAQ STYLES ENDS */
+ }
+
+ /* tablet, landscape iPad, lo-res laptops ands desktops */
+ @media (min-width:801px) {
+    .wrapper  {
+        max-width: 760px;
+    }
+
+    /* HEADER STYLES BEGIN */
+    h1 {
+        font-size: 33.4169px;
+        line-height: 36px;
+    }
+    /* HEADER STYLES END */
+
+    /* SECTION.OFFERS STYLES BEGIN */
+    .offers-container {
+        flex-direction: row;
+        align-items: baseline;
+        gap: 3em;
+        margin: 2.5em 0 1em 0;
+    }
+    /* SECTION.OFFERS STYLES END */
+ }
+
+ /* big landscape tablets, laptops, and desktops */
+ @media (min-width:1025px) {
+    .wrapper {
+            max-width: 1099px;
+    }
+ }
 
