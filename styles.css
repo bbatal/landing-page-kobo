@@ -172,14 +172,14 @@ h1 {
 .minus-symbol,
 .plus-symbol {
     display: inline-block;
-    background-image: url(./assets/minus-symbol.svg);
+    background-image: url(./assets/plus-symbol.svg);
     width: 25px;
     height: 25px;
     background-size: 25px 25px;
 }
 
-.plus-symbol {
-    background-image: url(./assets/plus-symbol.svg);
+.minus-symbol {
+    background-image: url(./assets/minus-symbol.svg) !important;
 }
 
 .faq-container .answer {
